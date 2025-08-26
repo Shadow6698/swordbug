@@ -24,7 +24,7 @@ local Remote = ReplicatedStorage.RE:FindFirstChild("1Gu1n")
 --//by
 --//Jinxx
 local tool = Instance.new("Tool")
-tool.Name = "Bug Hammer"
+tool.Name = "sword Hammer"
 tool.RequiresHandle = true
 tool.CanBeDropped = true
 
@@ -177,13 +177,13 @@ tool.Equipped:Connect(function(mouse)
             end
         end)
         
-        createNotification("🔨 Ban Hammer Equipado", "Clique em players para aplicar/remover bug!")
+        createNotification("espada equipada⚔️", "Clique em players para aplicar/remover bug!")
     end
 end)
 
 tool.Unequipped:Connect(function()
     game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ResetCharacterAppearance"):FireServer()
-    createNotification("🔨 Ban Hammer Guardado", "Tool desequipado!")
+    createNotification("⚔️espada Guardada", "Tool desequipado!")
 end)
 
 -- Limpeza automática quando players saem
